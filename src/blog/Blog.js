@@ -4,7 +4,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import Header from './Header';
 import MainFeaturedPost from './MainFeaturedPost';
@@ -23,42 +22,36 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const sections = [
+  { title: 'Top', url: '#' },
+  { title: 'About', url: '#' },
+  { title: 'Game', url: '#' },
   { title: 'Technology', url: '#' },
-  { title: 'Design', url: '#' },
-  { title: 'Culture', url: '#' },
-  { title: 'Business', url: '#' },
-  { title: 'Politics', url: '#' },
-  { title: 'Opinion', url: '#' },
-  { title: 'Science', url: '#' },
-  { title: 'Health', url: '#' },
-  { title: 'Style', url: '#' },
-  { title: 'Travel', url: '#' },
 ];
 
 const mainFeaturedPost = {
-  title: 'Title of a longer featured blog post',
+  title: 'LifeGame 3D Top Page',
   description:
-    "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
-  image: 'https://source.unsplash.com/random',
+    "生命の誕生、進化、淘汰などのプロセスをモデルで再現したライフゲーム3Dバージョン",
+  image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbihgOPtSQt7T3Rro-H9T-YcIb1S8jxR43dYVmIcTrfTxkpL1Dc2NJ29U7VhMhhN5u4Nk&usqp=CAU',
   imgText: 'main image description',
-  linkText: 'Continue reading…',
+  linkText: 'Wikipedia link...',
 };
 
 const featuredPosts = [
   {
-    title: 'Featured post',
-    date: 'Nov 12',
+    title: 'What\'s lifegame ?',
+    date: '--',
     description:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbihgOPtSQt7T3Rro-H9T-YcIb1S8jxR43dYVmIcTrfTxkpL1Dc2NJ29U7VhMhhN5u4Nk&usqp=CAU',
     imageText: 'Image Text',
   },
   {
-    title: 'Post title',
-    date: 'Nov 11',
+    title: 'Visit mysterious world...',
+    date: '--',
     description:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbihgOPtSQt7T3Rro-H9T-YcIb1S8jxR43dYVmIcTrfTxkpL1Dc2NJ29U7VhMhhN5u4Nk&usqp=CAU',
     imageText: 'Image Text',
   },
 ];
@@ -83,9 +76,8 @@ const sidebar = {
     { title: 'April 1999', url: '#' },
   ],
   social: [
-    { name: 'GitHub', icon: GitHubIcon },
-    { name: 'Twitter', icon: TwitterIcon },
-    { name: 'Facebook', icon: FacebookIcon },
+    { name: 'GitHub', icon: GitHubIcon , url: 'https://github.com/ishishow'},
+    { name: 'Twitter', icon: TwitterIcon, url: 'https://twitter.com/home'},
   ],
 };
 
@@ -96,7 +88,7 @@ export default function Blog() {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="Blog" sections={sections} />
+        <Header title="LifeGame 3D" sections={sections} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4}>
