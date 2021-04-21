@@ -44,9 +44,9 @@ export default function Blog() {
         <Container maxWidth="lg">
           <Header title="LifeGame 3D" sections={sections} />
           <main>
-            <MainFeaturedPost post={mainFeaturedPost} />
             <Switch>
               <Route exact path="/">
+                <MainFeaturedPost post={mainFeaturedPost} />
                 <Top />
               </Route>
               <Route exact path="/about">

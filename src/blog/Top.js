@@ -10,6 +10,7 @@ const featuredPosts = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbihgOPtSQt7T3Rro-H9T-YcIb1S8jxR43dYVmIcTrfTxkpL1Dc2NJ29U7VhMhhN5u4Nk&usqp=CAU",
     imageText: "Image Text",
+    url: "#/about",
     linkText: "Continue reading...",
   },
   {
@@ -20,6 +21,7 @@ const featuredPosts = [
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbihgOPtSQt7T3Rro-H9T-YcIb1S8jxR43dYVmIcTrfTxkpL1Dc2NJ29U7VhMhhN5u4Nk&usqp=CAU",
     imageText: "Image Text",
+    url: "#/game",
     linkText: "Let's start...",
   },
 ];
