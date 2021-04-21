@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const sections = [
-  { title: "Top", url: "#/" },
+  { title: "Top", url: "#/top" },
   { title: "About", url: "#/about" },
   { title: "Game", url: "#/game" },
   { title: "Technology", url: "#/tech" },
@@ -45,7 +45,7 @@ export default function Blog() {
           <Header title="LifeGame 3D" sections={sections} />
           <main>
             <Switch>
-              <Route exact path="/">
+              <Route exact path="/top">
                 <MainFeaturedPost post={mainFeaturedPost} />
                 <Top />
               </Route>
