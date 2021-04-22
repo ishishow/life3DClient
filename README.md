@@ -2,7 +2,7 @@
 
 ## :page_with_curl: App URL
 
-- "hogehoge"
+- https://ishishow.github.io/life3DClient/#/top
 
 ## :computer: Technologies
 
