@@ -1,6 +1,6 @@
 import React from "react";
-import { HashRouter, Route, Switch, Link } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
+import { HashRouter, Route, Switch } from "react-router-dom";
+// import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import Header from "./Header";
@@ -11,11 +11,11 @@ import Tech from "./Tech";
 import MainFeaturedPost from "./MainFeaturedPost";
 import Footer from "./Footer";
 
-const useStyles = makeStyles((theme) => ({
-  mainGrid: {
-    marginTop: theme.spacing(3),
-  },
-}));
+// const useStyles = makeStyles((theme) => ({
+//   mainGrid: {
+//     marginTop: theme.spacing(3),
+//   },
+// }));
 
 const sections = [
   { title: "Top", url: "#/top" },
@@ -35,7 +35,7 @@ const mainFeaturedPost = {
 };
 
 export default function Blog() {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return (
     <HashRouter>
