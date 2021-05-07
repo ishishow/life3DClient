@@ -9,6 +9,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Hidden from "@material-ui/core/Hidden";
 import Link from "@material-ui/core/Link";
+import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles({
   card: {
@@ -28,35 +29,28 @@ export default function FeaturedPost(props) {
 
   return (
     <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href="#">
-        <Card className={classes.card}>
-          <div className={classes.cardDetails}>
-            <CardContent>
-              <Typography component="h2" variant="h5">
-                {post.title}
-              </Typography>
-              <Typography variant="subtitle1" color="textSecondary">
-                {post.date}
-              </Typography>
-              <Typography variant="subtitle1" paragraph>
-                {post.description}
-              </Typography>
-              <Typography variant="subtitle1" color="primary">
-                <Link color="inherit" noWrap variant="body2" href={post.url}>
-                  {post.linkText}
-                </Link>
-              </Typography>
-            </CardContent>
-          </div>
-          <Hidden xsDown>
-            <CardMedia
-              className={classes.cardMedia}
-              image={post.image}
-              title={post.imageTitle}
-            />
-          </Hidden>
-        </Card>
-      </CardActionArea>
+      <div className={classes.cardDetails}>
+        <Typography component="h2" variant="h4">
+          {post.title}
+        </Typography>
+        <Typography variant="subtitle1" color="textSecondary">
+          {post.date}
+        </Typography>
+        <Typography variant="subtitle1" paragraph>
+          {post.description}
+        </Typography>
+        <Typography variant="subtitle1" color="primary">
+          <Link color="inherit" noWrap variant="body2" href={post.url}>
+            <Button
+              variant="contained"
+              color="#ffffff"
+              style={{ borderRadius: 50, color: "#000000" }}
+            >
+              {post.linkText}
+            </Button>
+          </Link>
+        </Typography>
+      </div>
     </Grid>
   );
 }

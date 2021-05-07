@@ -4,21 +4,26 @@ import { makeStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
+import Logo from "../logo.png";
+import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
-    borderBottom: `1px solid ${theme.palette.divider}`,
-  },
-  toolbarTitle: {
-    flex: 1,
+    borderBottom: `1x solid ${theme.palette.divider}`,
   },
   toolbarSecondary: {
-    justifyContent: "space-between",
+    display: "flex",
     overflowX: "auto",
   },
   toolbarLink: {
-    padding: theme.spacing(1),
+    marginTop: "5px",
+    margin: theme.spacing(1),
     flexShrink: 0,
+  },
+  sss: {
+    marginRight: "auto",
+    marginTop: "5px",
+    marginLeft: "15px",
   },
 }));
 
@@ -28,33 +33,31 @@ export default function Header(props) {
 
   return (
     <React.Fragment>
-      <Toolbar className={classes.toolbar}>
-        <Typography
-          component="h2"
-          variant="h5"
-          color="inherit"
-          align="center"
-          noWrap
-          className={classes.toolbarTitle}
-        >
-          {title}
-        </Typography>
-      </Toolbar>
       <Toolbar
         component="nav"
         variant="dense"
         className={classes.toolbarSecondary}
       >
+        <div className={classes.sss}>
+          <img src={Logo} alt="" width="170" />
+        </div>
         {sections.map((section) => (
           <Link
             color="inherit"
             noWrap
             key={section.title}
-            variant="body2"
+            variant="body1"
             href={section.url}
             className={classes.toolbarLink}
+            style={{ marginRight: "3vw" }}
           >
+            {/* <Button
+              variant="outlined"
+              color="inherit"
+              style={{ borderRadius: 50, color: "#ffffff" }}
+            > */}
             {section.title}
+            {/* </Button> */}
           </Link>
         ))}
       </Toolbar>
