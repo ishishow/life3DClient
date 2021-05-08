@@ -49,7 +49,7 @@ export default function Header(props) {
             className={classes.toolbarLink}
             style={{ marginRight: "3vw" }}
           >
-            {section.title}
+            <strong>{section.title}</strong>
           </Link>
         ))}
       </Toolbar>

@@ -49,11 +49,12 @@ export default function MainFeaturedPost(props) {
             <img src={Logo} alt="" width="280" />
           </Typography>
           <Typography variant="h4" color="inherit" paragraph>
-            ライフゲームとは生命の誕生、進化、淘汰などのプロセスを再現したモデルであり、
-            <br />
-            こちらでは３Dバージョンが楽しめます。
-            <br />
-            　
+            <strong>
+              ライフゲームとは生命の誕生、進化、淘汰などのプロセスを再現したモデルであり、
+              <br />
+              こちらでは３Dバージョンが楽しめます。
+              <br />　
+            </strong>
           </Typography>
           <Grid container>
             <Grid item md={6} xs={12}>
