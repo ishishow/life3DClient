@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Header(props) {
   const classes = useStyles();
-  const { sections, title } = props;
+  const { sections } = props;
 
   return (
     <React.Fragment>

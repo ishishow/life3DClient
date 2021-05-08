@@ -1,25 +1,11 @@
 import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import About from "./About";
 import Game from "./Game";
 import Tech from "./Tech";
 import MainFeaturedPost from "./MainFeaturedPost";
-
-const useStyles = makeStyles((theme) => ({
-  mainGrid: {
-    marginTop: theme.spacing(3),
-  },
-}));
-
-const sections = [
-  { title: "Top", url: "#/top" },
-  { title: "About", url: "#/about" },
-  { title: "Game", url: "#/game" },
-  { title: "Technology", url: "#/tech" },
-];
 
 const mainFeaturedPost = {
   title: "LifeGame 3D Top Page",
@@ -32,8 +18,6 @@ const mainFeaturedPost = {
 };
 
 export default function Blog() {
-  const classes = useStyles();
-
   return (
     <HashRouter>
       <React.Fragment>
