@@ -2,10 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import Logo from "../logo.png";
-import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -51,13 +49,7 @@ export default function Header(props) {
             className={classes.toolbarLink}
             style={{ marginRight: "3vw" }}
           >
-            {/* <Button
-              variant="outlined"
-              color="inherit"
-              style={{ borderRadius: 50, color: "#ffffff" }}
-            > */}
             {section.title}
-            {/* </Button> */}
           </Link>
         ))}
       </Toolbar>

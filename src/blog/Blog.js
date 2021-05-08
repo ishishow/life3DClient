@@ -3,13 +3,10 @@ import { HashRouter, Route, Switch } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
-import Header from "./Header";
-import Top from "./Top";
 import About from "./About";
 import Game from "./Game";
 import Tech from "./Tech";
 import MainFeaturedPost from "./MainFeaturedPost";
-import Footer from "./Footer";
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -42,7 +39,6 @@ export default function Blog() {
       <React.Fragment>
         <CssBaseline />
         <Container maxWidth="lg">
-          {/* <Header title="LifeGame 3D" sections={sections} /> */}
           <main>
             <Switch>
               <Route exact path="/top">
@@ -57,13 +53,11 @@ export default function Blog() {
               <Route path="/tech">
                 <Tech />
               </Route>
-              <Route component={Top}></Route>
+              <Route>
+                <MainFeaturedPost post={mainFeaturedPost} />
+              </Route>
             </Switch>
           </main>
-          {/* <Footer
-            title="Footer"
-            description="Something here to give the footer a purpose!"
-          /> */}
         </Container>
       </React.Fragment>
     </HashRouter>
