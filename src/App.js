@@ -1,11 +1,10 @@
 import "./App.css";
 import Blog from "./blog/Blog";
-import Img from "./image.png";
 import Header from "./blog/Header";
 
 function App() {
   const style = {
-    backgroundImage: `url(${Img})`,
+    // backgroundImage: `url(${Img})`,
   };
   const sections = [
     { title: "Top", url: "#/top" },
