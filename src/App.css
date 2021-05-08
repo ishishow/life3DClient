@@ -1,7 +1,5 @@
 .App {
   text-align: center;
-  /* background-image: url("./image.png") !important; */
-  /* background-image: url("./lifegame.png") !important; */
   background-image: url("./lifegame.gif") !important;
   background-size: contain;
 }
@@ -35,9 +33,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-/* main {
-  display: flex;
-} */
+
 .App-link {
   color: #61dafb;
 }

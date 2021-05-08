@@ -47,7 +47,6 @@ export default function Blog() {
             <Switch>
               <Route exact path="/top">
                 <MainFeaturedPost post={mainFeaturedPost} />
-                {/* <Top /> */}
               </Route>
               <Route exact path="/about">
                 <About />
