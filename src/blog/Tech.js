@@ -1,7 +1,7 @@
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import { Typography } from "@material-ui/core";
-import image3 from "../image3.gif";
+import image3 from "../arch.png";
 import SportsEsportsRoundedIcon from "@material-ui/icons/SportsEsportsRounded";
 import Link from "@material-ui/core/Link";
 import Button from "@material-ui/core/Button";
@@ -25,21 +25,21 @@ function Tech() {
             {/* ライフゲームとは */}
             <strong>使用技術</strong>
           </Typography>
-          <Typography style={{ padding: "0% 3%", paddingTop: "3%" }}>
+          <Typography style={{ padding: "0% 3%", paddingTop: "1%" }}>
             <br />
             <strong>Unity</strong> : ver2019
             <br />
             <br />
             <strong>Golang</strong>
-            : ver1.6
+            : ver1.16.2
             <br />
             <br />
             <strong>JavaScript(React)</strong>
-            : react--unity-webgl
+            : react-unity-webgl, Material-UI
             <br />
             <br />
             <strong>Postgres</strong>
-            : heroku無料枠
+            : sapport by heroku
             <br />
             <br />
             <strong>Heroku</strong>
@@ -48,9 +48,26 @@ function Tech() {
           </Typography>
           <Grid style={{ textAlign: "left" }}>
             <Typography
+              component="h1"
+              variant="h4"
+              color="inherit"
+              style={{ padding: "2% 3%", paddingTop: "4%" }}
+            >
+              アーキテクチャ図
+            </Typography>
+            <Typography
               style={{
                 padding: "5% 5%",
-                paddingTop: "8%",
+                paddingTop: "2%",
+                textAlign: "left",
+              }}
+            >
+              <img src={image3} alt="" />
+            </Typography>
+            <Typography
+              style={{
+                padding: "5% 5%",
+                paddingTop: "2%",
                 textAlign: "center",
               }}
             >

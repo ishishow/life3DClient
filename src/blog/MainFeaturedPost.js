@@ -53,7 +53,8 @@ export default function MainFeaturedPost(props) {
               ライフゲームとは生命の誕生、進化、淘汰などのプロセスを再現したモデルであり、
               <br />
               こちらでは３Dバージョンが楽しめます。
-              <br />　
+              <br />
+              　
             </strong>
           </Typography>
           <Grid container>
@@ -77,6 +78,7 @@ export default function MainFeaturedPost(props) {
                 <Button
                   variant="contained"
                   color="inherit"
+                  size="large"
                   startIcon={<SportsEsportsRoundedIcon />}
                   style={{ borderRadius: 50, color: "#000000" }}
                 >
