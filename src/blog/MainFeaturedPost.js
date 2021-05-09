@@ -4,7 +4,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Link from "@material-ui/core/Link";
-import Logo from "../logo5.png";
 import { Button } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import SportsEsportsRoundedIcon from "@material-ui/icons/SportsEsportsRounded";
@@ -54,8 +53,7 @@ export default function MainFeaturedPost(props) {
               ライフゲームとは生命の誕生、進化、淘汰などのプロセスを再現したモデルであり、
               <br />
               こちらでは３Dバージョンが楽しめます。
-              <br />
-              　
+              <br />　
             </strong>
           </Typography>
           <Grid container>
