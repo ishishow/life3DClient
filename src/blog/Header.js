@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 import Toolbar from "@material-ui/core/Toolbar";
 import Link from "@material-ui/core/Link";
-import Logo from "../logo.png";
+import Logo from "../logo6.png";
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -37,7 +37,7 @@ export default function Header(props) {
         className={classes.toolbarSecondary}
       >
         <div className={classes.sss}>
-          <img src={Logo} alt="" width="170" />
+          <img src={Logo} alt="" width="210" />
         </div>
         {sections.map((section) => (
           <Link

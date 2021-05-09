@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.1afae1e2.chunk.css",
-    "main.js": "./static/js/main.ce7568da.chunk.js",
-    "main.js.map": "./static/js/main.ce7568da.chunk.js.map",
+    "main.js": "./static/js/main.40451f6b.chunk.js",
+    "main.js.map": "./static/js/main.40451f6b.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.bb64e64f.js",
     "runtime-main.js.map": "./static/js/runtime-main.bb64e64f.js.map",
     "static/js/2.03f9c18f.chunk.js": "./static/js/2.03f9c18f.chunk.js",
@@ -14,13 +14,12 @@
     "static/js/2.03f9c18f.chunk.js.LICENSE.txt": "./static/js/2.03f9c18f.chunk.js.LICENSE.txt",
     "static/media/arch.dc78d247.png": "./static/media/arch.dc78d247.png",
     "static/media/image3.2f7322a4.gif": "./static/media/image3.2f7322a4.gif",
-    "static/media/App.css": "./static/media/lifegame.1cd12c0e.gif",
-    "static/media/logo.f5cda4a8.png": "./static/media/logo.f5cda4a8.png"
+    "static/media/App.css": "./static/media/lifegame.1cd12c0e.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.bb64e64f.js",
     "static/js/2.03f9c18f.chunk.js",
     "static/css/main.1afae1e2.chunk.css",
-    "static/js/main.ce7568da.chunk.js"
+    "static/js/main.40451f6b.chunk.js"
   ]
 }
