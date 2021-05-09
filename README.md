@@ -1,4 +1,4 @@
-# LifeGame3D
+# Game of Life 3D
 
 ## :page_with_curl: App URL
 

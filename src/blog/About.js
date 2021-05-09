@@ -87,7 +87,8 @@ function About() {
             </Typography>
             <Typography style={{ padding: "0% 3%", paddingTop: "3%" }}>
               インターネット上で<strong>「ライフゲーム」</strong>
-              と検索するとほぼ２次元で施工されているがUnityを駆使して３次元で表した。
+              と検索するとほぼ２次元で作成されているが、
+              Unityを駆使して３次元で表した。
               <br />
               二次元時と比べ、三次元だと厚みが出るのでより多くの生命パターンが発見できるだろう。
               <br />

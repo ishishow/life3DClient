@@ -42,7 +42,7 @@ function Tech() {
             : sapport by heroku
             <br />
             <br />
-            <strong>Heroku</strong>
+            <strong>Heroku / Vercel</strong>
             : 無料枠使用(Go, Postgres)
             <br />
           </Typography>

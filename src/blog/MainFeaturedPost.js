@@ -46,7 +46,8 @@ export default function MainFeaturedPost(props) {
       <Grid item md={7}>
         <div className={classes.mainFeaturedPostContent}>
           <Typography component="h1" variant="h3" color="inherit" gutterBottom>
-            <img src={Logo} alt="" width="280" />
+            {/* <img src={Logo} alt="" width="280" /> */}
+            <strong>Game of Life 3D</strong>
           </Typography>
           <Typography variant="h4" color="inherit" paragraph>
             <strong>
